@@ -1,5 +1,7 @@
 :root{
-    --primary-colour: rgb(255, 102, 0);
+    --primary-colour: rgb(247, 61, 4);
+    --tertiary-colour: rgb(#8a8a8a);
+    --font-family: sans-serif;
 }
 
 
@@ -53,6 +55,9 @@ nav{
     gap: 5px;
     justify-content: flex-start;
 }
+a{
+    color: black;
+}
 
 .down .empty{
     width: 5rem;
@@ -95,14 +100,8 @@ nav{
 }
 
 
-hero{
-    width: 100%;
-    height: 90vh;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    background: url(./hero_bg.jpg);
-}
+
+
 nav .fas{
     color: var(--primary-colour);
 }
@@ -119,3 +118,114 @@ nav .icon{
 .left .fas{
     display: flex;
 }
+.search{
+    color: #000;
+}
+
+.hero {
+    width: 100%;
+    height: 90vh;
+    padding: 20px;
+    display: flexbox;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.65),
+            rgba(255, 255, 255, 0.65)),
+        url(./hero_bg.jpg);
+    background-position: center;
+    background-size: cover;}
+
+    .tiny{
+        color: var(--primary-colour);
+        font-weight: bolder;
+        font-size: 10px;
+        font-family: var(--font-family);
+    }
+
+    .arrow{
+        color: black;
+    }
+    .writeup{
+        font-size: 40px;
+        align-content:center;
+        font-family: sans-serif;
+    }
+    .writeup span{
+        font-weight: bolder;
+    }
+    .writeup b{
+        color: var(--primary-colour);
+    }
+    .button{
+        margin: 10px;
+    }
+    .button .book a:nth-child(1){
+        background-color: var(--primary-colour);
+        color: white;
+        width: 150px;
+        border: 1px solid var(--primary-colour);
+        
+    }
+
+    nav .fas {
+            color: var(--primary-colour);
+    }
+    since{
+        font-family: ;
+    }
+    .thirdsec{
+        display: flex;
+        border-top: 1px solid rgb(226, 97, 11);
+        padding-top: 40px;
+        font-size: small;
+        justify-content:;
+    }
+    .thirdsec span{
+        font-weight: bold;
+    }
+    .thirdsec button{
+        font-weight: bold;
+        padding: 5px 15px;
+        background-color: white;
+        
+    }
+    .thirdsec .fas{
+        color: var(--primary-colour);
+    }
+
+    .vision{
+        border-bottom: 1px solid rgb(226, 97, 11);
+        font-size: 50px;
+        font-weight: bold;  
+    }
+
+    .firstSec{
+        display: flex;
+        justify-content: space-around;
+    }
+
+     .secondsec {
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 5px solid white;
+        }
+
+    .feature{
+        margin: 20px;
+    }
+    .feature span{
+        color: var(--primary-colour);
+        font-weight: bolder;
+        font-size: small;
+        margin-left: 10px;
+    }
+
+    .service2{
+
+    }
+    .service3{
+
+    }
+    .service4 {}
+
+    .service5 {}

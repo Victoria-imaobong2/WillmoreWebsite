@@ -1,3 +1,121 @@
-up{
+:root{
+    --primary-colour: rgb(255, 102, 0);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    background-color: white;
+}
+.up{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.upleft{
+    align-content: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.up .upLeft small{
+    color: #8a8a8a;
+    display: ;
+}
+.up .upLeft small > span{
+    color: black;
+}
+
+.up.upright{
+    display: flex;
+    align-items: center;
+    gap: 10px;}
     
+
+.down{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    border-top: 1.5px solid #d1d1d1;
+}
+
+.down .left{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-start;
+}
+
+.down .empty{
+    width: 5rem;
+    height: 1px;
+    background: var(--primary-colour);
+}
+
+.down .left li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    
+}
+.left ul > li{
+    list-style: none;
+    
+}
+
+.downRight{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+
+.down .downRight .note > span{
+    font-weight: bolder;
+}
+.down .downRight .talk >span {
+    font-weight: bolder;
+}
+.call{
+    display: flex;
+}
+.i{
+    width: 25px;
+}
+.email {
+    display: flex;
+}
+
+
+hero{
+    width: 100%;
+    height: 90vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background: url(./hero_bg.jpg);
+}
+nav .fas{
+    color: var(--primary-colour);
+}
+nav .icon{
+    color: black;
+}
+
+.downRight .parallel{
+    width: 2px;
+    height: 5rem;
+    color: black;
+}
+
+.left .fas{
+    display: flex;
 }

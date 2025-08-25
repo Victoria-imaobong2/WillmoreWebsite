@@ -17,80 +17,89 @@
     <link rel="stylesheet" href="willmore.css">
   </head>
   <body>
-    <div>
+    <nav>
       <div class="up">
-        <nav class="upLeft">
-          <i class="fa-solid fa-phone-volume"></i>
-          <p>(+123) 1234 567 890</p>
-          <i class="fa-solid fa-envelope"></i>
-          <p>willmore@example.com</p>
-          <i class="fa-solid fa-clock"></i>
-          <p>Mon-Sat 7:00-16:30, <strong>Sunday - Closed</strong></p>
-        </nav>
-        <nav class="upRight">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-x-twitter"></i>
-          <i class="fa-brands fa-behance"></i>
-          <i class="fa-brands fa-youtube"></i>
-        </nav>
+        <div class="upLeft">
+          <i class="fas fa-solid fa-phone-volume"></i>
+          <small>(+123) 1234 567 890</small>
+          <i class="fas fa-solid fa-envelope"></i>
+          <small>willmore@example.com</small>
+          <i class="fas fa-solid fa-clock"></i>
+          <small>Mon-Sat 7:00-16:30, <span>Sunday - Closed</span></small>
+        </div>
+        <div class="upRight">
+          <div>
+            <a href="#"><i class="icon fa-brands fa-facebook-f"></i></a>
+          </div>
+          <div>
+            <a href="#"><i class="icon fa-brands fa-x-twitter"></i></a>
+          </div>
+          <div>
+            <a href="#"><i class="icon fa-brands fa-behance"></i></a></div>
+          <div>
+            <a href="#"><i class="icon fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
       </div>
 
-      <div>
-        <nav class="downLeft">
-          <p>Willmore</p>
-          <li>
-            <ul>
-              <a href="#">Home <i class="fa-solid fa-plus"></i> </a>
-            </ul>
-            <ul>
+      <div class="down">
+        <div class="left">
+          <h2>Willmore<span>.</span></h2>
+          <span class="empty"></span>
+          <ul>
+            <li>
+              <a href="#">Home <i class="fas fa-solid fa-plus"></i> </a>
+            </li>
+            <li>
               <a href="#">About</a>
-            </ul>
-            <ul>
+            </li>
+            <li>
               <a href="#">Work</a>
-            </ul>
-            <ul>
-              <a href="#">Pages</a>
-            </ul>
-            <ul>
+            </li>
+            <li>
+              <a href="#">Pages <i class="fas fa-solid fa-plus"></i></a>
+            </li>
+            <li>
               <a href="#">News</a>
-            </ul>
-            <ul>
+            </li>
+            <li>
               <a href="#">Contact</a>
-            </ul>
-          </li>
-        </nav>
-        <nav class="downRight">
+            </li>
+          </ul>
+        </div>
+        <div class="downRight">
+          
           <div class="call">
-            <i class="fa-solid fa-phone"></i>
-            <div>
-              <div>Call Us Now!</div>
-              <div>
+            <div class="i">
+            <i class="fas fa-solid fa-phone"></i></div>
+            <div class="note">Call Us Now! <br>
                 <span>(234) 1234-567-8901</span>
-              </div>
             </div>
           </div>
+          
           <div class="email">
-            <i class="fa-solid fa-envelope"></i>
-            <div>
-              <div>talk to us!</div>
-              <div>
+            <div class="i">
+            <i class="fas fa-solid fa-envelope"></i></div>
+            <div class="talk">talk to us! <br>
                 <span>willmore@example.com</span>
               </div>
-            </div>
           </div>
+
+          <span class="parallel"></span>
+
           <div class="search">
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
-        </nav>
+        </div>
       </div>
-    </div>
-
-    <div class="photo">
-      <div class="welcome">
-        >
+    </nav>
+    <main>
+      <section class="hero">
+         <div class="welcome">
+          >
         <p class="tiny">WELCOME TO WILLMORE</p>
       </div>
-      <div>
+      <div class="writeup">
         <p>Build a Better</p>
         <br />
         <p><span>House</span> for living</p>
@@ -99,7 +108,10 @@
         <button class="book"><a href="#">>BOOK NOW</a></button>
         <button class="learn"><a href="#">LEARN MORE</a></button>
       </div>
-    </div>
+       
+      </section>
+    </main>
+    
 
     <div>
       <p>

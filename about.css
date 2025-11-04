@@ -1,0 +1,44 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #fafafa;
+  color: #222;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f1f1f;
+  color: white;
+  padding: 15px 60px;
+}
+.logo span { color: #f39c12; }
+.nav-links { list-style: none; display: flex; gap: 20px; }
+.nav-links a {
+  color: white; text-decoration: none; font-weight: 500;
+}
+.nav-links a.active, .nav-links a:hover { color: #f39c12; }
+
+.about-hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: url('building-bg.jpg') center/cover no-repeat;
+  color: white;
+}
+.about-hero h1 span { color: #f39c12; }
+
+.about-content {
+  display: flex;
+  gap: 40px;
+  padding: 60px 80px;
+  align-items: center;
+}
+.about-text { flex: 1; }
+.about-img img { width: 100%; border-radius: 10px; }
+
+footer {
+  background: #1f1f1f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}

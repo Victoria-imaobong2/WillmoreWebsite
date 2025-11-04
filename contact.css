@@ -1,0 +1,33 @@
+body { font-family: 'Poppins', sans-serif; margin: 0; background: #fdfdfd; }
+nav { background: #1f1f1f; color: white; padding: 15px 60px; display: flex; justify-content: space-between; align-items: center; }
+.logo span { color: #f39c12; }
+.nav-links { list-style: none; display: flex; gap: 20px; }
+.nav-links a { color: white; text-decoration: none; }
+.nav-links a.active, .nav-links a:hover { color: #f39c12; }
+
+.contact-hero { text-align: center; padding: 80px 20px; background: #f1f1f1; }
+.contact-hero span { color: #f39c12; }
+
+.contact-section {
+  display: flex; justify-content: center; gap: 50px; padding: 60px;
+  flex-wrap: wrap;
+}
+.contact-form {
+  display: flex; flex-direction: column; gap: 15px;
+  flex: 1; min-width: 300px;
+}
+.contact-form input, .contact-form textarea {
+  padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem;
+}
+.contact-form button {
+  background: #f39c12; color: white; border: none; padding: 12px;
+  border-radius: 6px; font-size: 1rem; cursor: pointer;
+}
+.contact-form button:hover { background: #d98200; }
+
+.contact-info { flex: 1; min-width: 250px; }
+.contact-info h3 { color: #f39c12; }
+.contact-info p { margin: 10px 0; color: #333; }
+.contact-info i { margin-right: 10px; }
+
+footer { background: #1f1f1f; color: white; text-align: center; padding: 15px; }

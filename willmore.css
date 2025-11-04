@@ -1,300 +1,304 @@
-:root{
-    --primary-colour: rgb(247, 61, 4);
-    --tertiary-colour: rgb(#8a8a8a);
-    --font-family: sans-serif;
+:root {
+  --primary-colour: rgb(247, 61, 4);
+  --font-family: "Poppins", sans-serif;
 }
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav{
-    width: 100%;
-    background-color: white;
-}
-.up{
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-    padding: 10px;
-}
-.upleft{
-    align-content: center;
-    justify-content: center;
-    gap: 15px;
+body { font-family: 'Poppins', sans-serif; margin: 0; background: #fff; }
+
+
+nav {
+  width: 100%;
+  background-color: white;
 }
 
-.up .upLeft small{
-    color: #8a8a8a;
-    display: ;
-}
-.up .upLeft small > span{
-    color: black;
-}
-
-.up.upright{
-    display: flex;
-    align-items: center;
-    gap: 10px;}
-    
-
-.down{
-    display: flex;
-    align-items: center;
-    padding: 0px 10px;
-    justify-content: space-between;
-    border-top: 1.5px solid #d1d1d1;
+.up {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-.down .left{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    justify-content: flex-start;
-}
-a{
-    color: black;
-    text-decoration: none;
+.upLeft small {
+  color: #8a8a8a;
+  margin: 0 10px;
 }
 
-.down .empty{
-    width: 5rem;
-    height: 1px;
-    background: var(--primary-colour);
+.upLeft small span {
+  color: black;
 }
 
-.down .left li{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    
-    
-}
-.left ul > li{
-    list-style: none;
-    
+.upRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.downRight{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 25px;
-    padding: 20px 0px;
+.upRight .icon {
+  color: black;
+  font-size: 14px;
+  transition: color 0.3s ease;
 }
-.note{
-    font-size: 10px;
-    color: #8a8a8a;
+
+.upRight .icon:hover {
+  color: var(--primary-colour);
 }
-.talk{
-    font-size: 10px;
-    color: #8a8a8a;
+
+.down {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-top: 1.5px solid #d1d1d1;
 }
-.down .downRight .note > span{
-    font-weight: bolder;
-    color: black;
+
+.down .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.down .downRight .talk >span {
-    font-weight: bolder;
-    color: black;
+
+.down .left ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
-.call{
-    display: flex;
+
+.down .left ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
-.i{
-    width: 25px;
+
+.down .left ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
 }
+
+.down .left span.empty {
+  width: 4rem;
+  height: 2px;
+  background: var(--primary-colour);
+}
+
+.downRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.downRight .note,
+.downRight .talk {
+  font-size: 12px;
+  color: #8a8a8a;
+}
+
+.downRight span {
+  font-weight: bold;
+  color: black;
+}
+
+.call,
 .email {
-    display: flex;
-}
-.down .parallel {
-    width: 1px;
-    height: 2vh;
-    background: #8a8a8a;
-}
-.down .search{
-    color: #8a8a8a;
-    font-size: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-
-nav .fas{
-    color: var(--primary-colour);
-}
-nav .icon{
-    color: black;
+.parallel {
+  width: 1px;
+  height: 25px;
+  background: #8a8a8a;
 }
 
-
-
-.left .fas{
-    display: flex;
-}
-.search{
-    color: #000;
+.search {
+  color: #8a8a8a;
+  cursor: pointer;
 }
 
-main{
-    justify-self:;
-}
 .hero {
-    width: 100%;
-    height: 90vh;
-    padding: 20px;
-    display: flexbox;
-    align-content: center;
-    justify-content: center;
-    background: linear-gradient(rgba(255, 255, 255, 0.65),
-            rgba(255, 255, 255, 0.65)),
-        url(./hero_bg.jpg);
-    background-position: center;
-    background-size: cover;}
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(./hero_bg.jpg) center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    .welbuild{
-        
-    }
+.welbuild {
+  text-align: center;
+}
 
-    .tiny{
-        color: var(--primary-colour);
-        font-weight: bolder;
-        font-size: 10px;
-        font-family: var(--font-family);
-    }
+.tiny {
+  color: var(--primary-colour);
+  font-weight: bold;
+  font-size: 12px;
+}
+.tiny :hover{
+    w
+}
 
-    .arrow{
-        color: black;
-    }
-    .writeup{
-        font-size: 40px;
-        align-content:center;
-        font-family: sans-serif;
-    }
-    .writeup span{
-        font-weight: bolder;
-    }
-    .writeup b{
-        color: var(--primary-colour);
-    }
-    .button{
-        margin: 10px;
-    }
-    .button .book a:nth-child(1){
-        background-color: var(--primary-colour);
-        color: white;
-        width: 150px;
-        border: 1px solid var(--primary-colour);
-        
-    }
+.writeup {
+  font-size: 42px;
+  margin-top: 10px;
+  line-height: 1.2;
+}
 
-    nav .fas {
-            color: var(--primary-colour);
-    }
-    .since{
-        font-size: 50px;
-    }
-    .thirdsec{
-        display: flex;
-        border-top: 1px solid rgb(226, 97, 11);
-        padding-top: 40px;
-        font-size: small;
-        justify-content: space-evenly;
-    }
-    .thirdsec span{
-        font-weight: bold;
-    }
-    .thirdsec button{
-        font-weight: bold;
-        padding: 5px 15px;
-        background-color: white;
-        
-    }
-    .thirdsec .fas{
-        color: var(--primary-colour);
-    }
-    .image1{
-        padding-bottom: 60px;
-    }
-    .image2{
-        width: 700px;
-    }
+.writeup span {
+  font-weight: 700;
+}
 
-    .vision{
-        border-bottom: 1px solid rgb(226, 97, 11);
-        font-size: 50px;
-        font-weight: bold;  
-    }
+.writeup b {
+  color: var(--primary-colour);
+}
 
-    .mainfeature{
-        padding: 40px 60px;
-        background-color: #ece9e9;
-    }
+.button {
+  margin-top: 20px;
+}
 
-    .mainfeature .fas{
-        color: var(--primary-colour);
-    }
+.button button {
+  padding: 10px 20px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 10px;
+}
 
-    .writeups{
-        font-size: 15px;
-    }
-    .firstSec{
-        display: flex;
-        justify-content: space-around;
-        align-content: space-evenly;
-    }
+.book a {
+  background-color: var(--primary-colour);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
 
-     .secondsec {
-            display: flex;
-            justify-content: space-around;
-            border-bottom: 5px solid white;
-            align-content: space-evenly;
-        }
+.learn a {
+  border: 1px solid var(--primary-colour);
+  color: var(--primary-colour);
+  padding: 10px 20px;
+  text-decoration: none;
+}
 
-    .feature{
-       
-    }
-    .feature span{
-        color: var(--primary-colour);
-        font-weight: bolder;
-        font-size: small;
-        margin-left: 10px;
-    }
-    .feature >h2{
-        font-size: large;
-    }
+.since {
+  font-size: 50px;
+  padding: 40px;
+}
 
-    .service1 > h6{
-        font-weight: bolder;
-        font-size: large;
+.thirdsec {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px;
+  border-top: 2px solid var(--primary-colour);
+}
 
-    }
-    .service2 > h6{
-        font-weight: bolder;
-            font-size: large;
-    }
-    .service3 >h6{
-        font-weight: bolder;
-        font-size: large;
-    }
-    .service4 > h6{
-        font-weight: bolder;
-        font-size: large;
-    }
-    .service5 > h6 {
-        font-weight: bolder;
-        font-size: large;
-    }
-    .service{
-        font-size: small;
-        color: #8a8a8a
-    }
-    
-    .mid{
-        align-content: center;
-    }
+.thirdsec .image2 {
+  width: 600px;
+}
 
-    .willi{
-        align-content: center;
-        justify-content: center;
-    }
+.thirdsec .mid span {
+  font-weight: bold;
+}
+
+.thirdsec button {
+  padding: 10px 20px;
+  font-weight: bold;
+  background: white;
+  border: 1px solid var(--primary-colour);
+  cursor: pointer;
+}
+
+.thirdsec button a {
+  color: black;
+  text-decoration: none;
+}
+
+.vision {
+  border-bottom: 2px solid var(--primary-colour);
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.mainfeature {
+  background: #ece9e9;
+  padding: 50px;
+}
+
+.firstSec,
+.secondsec {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature {
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.feature span {
+  color: var(--primary-colour);
+  font-weight: bold;
+}
+
+.feature h2 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.service1,
+.service2,
+.service3,
+.service4,
+.service5 {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h6 {
+  font-weight: bold;
+  font-size: large;
+}
+
+.service {
+  font-size: small;
+  color: #8a8a8a;
+}
+
+.willi {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  background: white;
+}
+body { font-family: 'Poppins', sans-serif; margin: 0; background: #fff; }
+nav { background: #1f1f1f; color: #fff; display: flex; justify-content: space-between; padding: 15px 60px; align-items: center; }
+.logo span { color: #f39c12; }
+.nav-links { list-style: none; display: flex; gap: 20px; }
+.nav-links a { color: white; text-decoration: none; }
+.nav-links a.active, .nav-links a:hover { color: #f39c12; }
+
+.work-hero { text-align: center; padding: 100px 20px; background: #f1f1f1; }
+.work-hero span { color: #f39c12; }
+
+.projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 60px; }
+.project img { width: 100%; border-radius: 10px; }
+.project h3 { margin-top: 10px; color: #222; }
+.project p { color: #555; }
+
+footer { background: #1f1f1f; color: white; text-align: center; padding: 15px; }

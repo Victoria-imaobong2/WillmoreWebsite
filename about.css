@@ -25,7 +25,8 @@ nav {
   background: url('building-bg.jpg') center/cover no-repeat;
   color: white;
 }
-.about-hero h1 span { color: #f39c12; }
+.about-hero h1
+{ color: #f39c12; }
 
 .about-content {
   display: flex;

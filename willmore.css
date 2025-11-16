@@ -234,6 +234,9 @@ nav {
   background: #ece9e9;
   padding: 50px;
 }
+.mainfeature button{
+  justify-content: center;
+}
 
 .firstSec,
 .secondsec {
@@ -279,13 +282,20 @@ nav {
   font-size: small;
   color: #8a8a8a;
 }
-
+.service1 :hover{
+  transform: matrix3d();
+}
 .willi {
   text-align: center;
   padding: 20px;
   font-size: 14px;
   background: white;
+  justify-content: center;
 }
+.willi i{
+  color: black;
+}
+
 body { font-family: 'Poppins', sans-serif; margin: 0; background: #fff; }
 nav { background: #1f1f1f; color: #fff; display: flex; justify-content: space-between; padding: 15px 60px; align-items: center; }
 .logo span { color: #f39c12; }
@@ -301,4 +311,12 @@ nav { background: #1f1f1f; color: #fff; display: flex; justify-content: space-be
 .project h3 { margin-top: 10px; color: #222; }
 .project p { color: #555; }
 
-footer { background: #1f1f1f; color: white; text-align: center; padding: 15px; }
+footer { background: #1f1f1f; color: white; text-align: center; padding: 15px; width:100%}
+.nam{
+  color: white;
+  display: block;
+  background-color: black;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
